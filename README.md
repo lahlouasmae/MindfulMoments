@@ -1,6 +1,6 @@
 # Mindful Moments: Stress Management Application Based on Mindfulness
 
-![Projetc's architecture](./assets/images/arshipfm.png)
+![Projetc's architecture](./assets/images/ahipfm.png)
 
 [Description courte de votre projet]
 
@@ -14,9 +14,23 @@
 - [Contributing](#contributing)
 
 ## Software architecture
-![architecture](lien_vers_image_architecture)
+![Projetc's architecture](./assets/images/arshipfm.png)
 
-[Description de votre architecture]
+## Software Architecture
+
+![Architecture Diagram](./assets/images/architecture.png)
+
+The application follows a modern three-tier architecture:
+
+- **Frontend**: Built with React.js, featuring a component-based structure with view templates and dedicated services
+- **Mobile**: Android application implementing MVVM (Model-View-ViewModel) pattern with LiveData for reactive updates and integrated Roberta AI model for real-time stress analysis and text sentiment detection
+- **Backend**: Spring Boot-based REST API with a layered architecture:
+ - Controllers for handling HTTP requests
+ - Services for business logic
+ - Repositories for data access using Spring Data JPA
+ - MySQL database for data persistence
+
+The system implements a clean separation of concerns where each layer communicates through well-defined interfaces, ensuring modularity and maintainability. The mobile application includes an AI-powered stress detection feature using the Roberta model along with a simple tokenizer for text processing.
 
 ## Docker Image
 ```yaml
