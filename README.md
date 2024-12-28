@@ -391,7 +391,8 @@ Mobile: Android Studio Logcat
 
 
 ## Video Demonstration
-[Insérez votre vidéo ou lien vers la vidéo]
+https://github.com/user-attachments/assets/bd60b4f5-9684-4396-977e-5ec25284b046
+
 ### Usage
 **Authentication:**
 - **Administrator Access:**
