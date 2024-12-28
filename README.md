@@ -1,4 +1,4 @@
-# [Mindful Moments : Application de Gestion du Stress Basée sur la Pleine Conscience]
+# Mindful Moments: Stress Management Application Based on Mindfulness
 
 ![Image principale du projet](lien_vers_image)
 
