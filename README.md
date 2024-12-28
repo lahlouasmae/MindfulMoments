@@ -381,26 +381,44 @@ Mobile: Android Studio Logcat
 
 ## Video Demonstration
 [Insérez votre vidéo ou lien vers la vidéo]
-Utilisation
-Authentification :
+### Usage
+**Authentication:**
+- **Administrator Access:**
+ - Email: admin@gmail.com
+ - Password: admin
 
-[Type d'utilisateur 1]
+- **User Access:**
+ - User account that created in signup
 
-Email : [email]
-Mot de passe : [mot de passe]
+**User Features:**
+- Account Management:
+ - Create personal account through signup
+ - Secure login
+ - Profile management and customization
+ 
+- Stress Detection & Management:
+ - Real-time stress level analysis through text
+ - AI-powered chatbot for stress assessment
+ - Personalized exercise recommendations based on stress levels
+ 
+- Wellness Resources:
+ - Access to Spotify API for stress-relief playlists
+ - Curated podcast recommendations for mental wellness
+ - Guided relaxation exercises
+ 
+- Progress Tracking:
+ - Personal exercise history
+ - Stress level monitoring over time
 
+**Admin Features:**
+- Manage user accounts
+- Manage exercises
 
-[Type d'utilisateur 2]
+## Contributing
+We welcome contributions from everyone, and we appreciate your help to make this project even better! If you would like to contribute, please follow these guidelines:
 
-Email : [email]
-Mot de passe : [mot de passe]
+### Contributors
+- Lahlou Asmae ([GitHub](https://github.com/lahlouasmae))
+- Taghti Zineb ([GitHub](https://github.com/zinebtaghti))
 
-
-
-Contributing
-[Message d'invitation aux contributions]
-Contributors
-
-[Nom Contributeur 1] ([Lien profil])
-[Nom Contributeur 2] ([Lien profil])
 
