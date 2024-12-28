@@ -16,11 +16,8 @@
 
 
 ## Software Architecture
-
 ![Projetc's architecture](./assets/images/arshipfm.png)
-
 The application follows a modern three-tier architecture:
-
 - **Frontend**: Built with React.js, featuring a component-based structure with view templates and dedicated services
 - **Mobile**: Android application implementing MVVM (Model-View-ViewModel) pattern with LiveData for reactive updates and integrated Roberta AI model for real-time stress analysis and text sentiment detection
 - **Backend**: Spring Boot-based REST API with a layered architecture:
@@ -106,7 +103,6 @@ Spring Boot
 MySql
 
 ## Project Structure
-
 Our project follows a comprehensive three-tier architecture split into backend (Spring Boot), frontend (React.js), and mobile (Android) applications.
 
 ### Backend Structure (Spring Boot)
@@ -143,18 +139,29 @@ The Android application follows the MVVM pattern:
   - *api:* API integration interfaces
   - *model:* Data models
   - *utils:* Utility classes
+  - *viewmodels:*
+    - ExerciseViewModel.java
+    - HistoryViewModel.java
   - *Activities:* 
     - FirstActivity.java (Entry point)
     - AdminHomeActivity.java (Admin dashboard)
     - HomeActivity (User Home)
-    - Spotify
+    - SpotifyMusicActivity
+    - EditExerciseActivity
+    - AddExerciseActivity
   - *Fragments:*
     - ExerciseFragment.java
     - HistoryFragment.java
     - AboutUsFragment.java
     - RecommandationFragment.java
     - AcceuilFragment.java
-    - 
+    - AcceuilAdminFragment.java
+    - UserManagmentFragment.java
+    - AdminExerciseFragment.java
+    - ExerciseDetailsBottomSheet.java
+ - *Roberta:*
+   - StressAnalyzer.java
+   - SimpleTokenizer.java
 
 ### Dependencies
 
