@@ -103,7 +103,7 @@ volumes:
 ### Technologies Used from web side 
 
  - React Js
- - Css
+ - Tailwind CSS
 
 ## Backend
 ### Technologies Used
