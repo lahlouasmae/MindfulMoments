@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Mindful Moments🕊️</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="exercise_name_format">Nom : %s</string>
+    <string name="exercise_type_format">Type : %s</string>
+    <string name="exercise_completed_format">Terminé : %s</string>
+    <string name="mark_as_complete">Compléter</string>
+    <string name="mark_as_incomplete">Marquer comme non terminé</string>
+    <string name="update_success">État mis à jour avec succès</string>
+    <string name="update_error">Erreur lors de la mise à jour</string>
+    <string name="connection_error">Erreur de connexion</string>
+    <string name="exercise_image">Image de \'exercice</string>
+    <string name="tab_list">Liste</string>
+    <string name="tab_recommendations">Recommandations</string>
+    <string name="tab_schedule">Horaire</string>
+    <string name="tab_about">À propos</string>
+    <string name="about_us_title">À propos de nous</string>
+    <string name="stress_exercises_title">Exercices de gestion du stress</string>
+    <string name="stress_exercises_description">Découvrez nos exercices pour vous aider à gérer votre stress quotidien</string>
+    <string name="google_maps_key">AIzaSyCVcWiPav4XP63jSzfU2djKI3NLZJ4Bqqw</string>
+    <string name="stress_alert_channel_name">Alertes de stress</string>
+    <string name="stress_alert_channel_description">Notifications pour les niveaux de stress élevés</string>
+    <string name="stress_alert_title">Alerte de niveau de stress</string>
+    <string name="stress_alert_text">Votre niveau moyen de stress est élevé : %.1f</string>
+</resources>

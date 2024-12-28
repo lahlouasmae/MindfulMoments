@@ -1,0 +1,71 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/stressTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stress Level Evolution"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textAlignment="center"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimation"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/analys"
+            />
+    <!-- Moyenne du stress -->
+    <TextView
+        android:id="@+id/stressAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stress average : --"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="8dp" />
+
+    <!-- Graphique de stress -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/stressChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="16dp"/>
+        <TextView
+            android:id="@+id/stresshisto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your completed exercises"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textAlignment="center"/>
+
+    <!-- SearchView pour rechercher des exercices -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search..." />
+
+    <!-- RecyclerView pour les exercices -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    </LinearLayout>
+</ScrollView>

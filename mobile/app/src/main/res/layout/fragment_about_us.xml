@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aboutus"
+            android:alpha="0.9"/>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Espace pour l'image de fond -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <!-- Welcome Title Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/aboutUsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to Mindful Moments🧘‍♂️💆‍♀️!"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Description Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/aboutUsText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notre application a pour objectif d'aider les utilisateurs à réduire leur stress et leur anxiété grâce à l'intégration de l'intelligence artificielle. Cette IA permet de détecter le niveau de stress de l'utilisateur et de lui proposer des exercices adaptés pour l'aider à se détendre."
+                    android:textSize="16sp"
+                    android:textColor="#4A4A4A"
+                    android:padding="20dp"
+                    android:textAlignment="center"
+                    android:lineSpacingMultiplier="1.3"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Location Title Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/loc" />
+                <TextView
+                    android:id="@+id/Text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our location"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:paddingBottom="30dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

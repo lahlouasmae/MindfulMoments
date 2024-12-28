@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Fond blanc -->
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#4CAF50" /> <!-- Bordure verte -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Fond blanc -->
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="1dp"
+                android:color="#CCCCCC" /> <!-- Bordure gris clair -->
+        </shape>
+    </item>
+</selector>

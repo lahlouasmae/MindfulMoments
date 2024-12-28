@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabStyle" parent="Widget.Material3.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabIconTint">@color/tab_color_selector</item>
+        <item name="tabTextColor">@color/tab_color_selector</item>
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+    </style>
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <!-- 50% donne une forme parfaitement circulaire -->
+    </style>
+
+    <!-- Style alternatif avec bordure -->
+    <style name="CircleImageView.WithBorder">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/grey_700</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Theme.Your" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Couleurs de base Spotify -->
+        <item name="colorPrimary">#1DB954</item>
+        <item name="colorPrimaryDark">#191414</item>
+        <item name="colorAccent">#1DB954</item>
+
+        <!-- Fond de l'application -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="RoundedImageView">
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="GradientBackground">
+        <item name="android:background">@drawable/gradient_background</item>
+    </style>
+
+</resources>
+
+
+
