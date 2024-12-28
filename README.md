@@ -34,48 +34,64 @@ The system implements a clean separation of concerns where each layer communicat
 
 ## Docker Image
 ```yaml
-version: '3'
+version: '3.8'
 services:
- mysql:
-   image: mysql:5.7
-   ports:
-     - "3308:3308"
-   environment:
-     MYSQL_DATABASE: [nom_base_de_données]
-     MYSQL_ROOT_PASSWORD: [mot_de_passe]
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: stress3
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
- backend:
-   build:
-     context: ./[dossier_backend]
-     dockerfile: Dockerfile
-   ports:
-     - "8000:8000"
-   environment:
-     SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/[nom_base_de_données]
-     SPRING_DATASOURCE_USERNAME: [utilisateur]
-     SPRING_DATASOURCE_PASSWORD: [mot_de_passe]
-   depends_on:
-     mysql:
-       condition: service_started
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: backend
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/stress3?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - SERVER_PORT=8080
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - app-network
 
- frontend:
-   build:
-     context: ./[dossier_frontend]
-     dockerfile: DockerFile
-   ports:
-     - "80:80"
-   depends_on:
-     backend:
-       condition: service_started
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: frontend
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
 
- phpmyadmin:
-   image: phpmyadmin/phpmyadmin
-   ports:
-     - "8081:80"
-   environment:
-     PMA_HOST: mysql
-     MYSQL_ROOT_PASSWORD: [mot_de_passe]
-     PMA_PORT: 3306
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
 Frontend
 Technologies Used
 
