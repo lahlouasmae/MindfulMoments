@@ -92,6 +92,7 @@ networks:
 
 volumes:
   mysql_data:
+```
 Frontend
 Technologies Used
 
