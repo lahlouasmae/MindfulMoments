@@ -1,6 +1,6 @@
 # Mindful Moments: Stress Management Application Based on Mindfulness
 
-![Projetc's architecture](./assets/images/ahipfm.png)
+![Projetc's architecture](./assets/images/R.jpg)
 
 [Description courte de votre projet]
 
