@@ -97,19 +97,19 @@ volumes:
 ## Frontend
 ### Technologies Used from mobile side 
 
- -Android 
- -Java
+- Android
+- Java
 
 ### Technologies Used from web side 
 
- -React Js 
- -Css
+ - React Js
+ - Css
 
 ## Backend
 ### Technologies Used
 
- -Spring Boot 
- -MySql
+ - Spring Boot
+ - MySql
 
 ## Project Structure
 Our project follows a comprehensive three-tier architecture split into backend (Spring Boot), frontend (React.js), and mobile (Android) applications.
