@@ -25,7 +25,7 @@ The platform aims to provide early stress detection and continuous emotional wel
 
 
 ## Software Architecture
-![Projetc's architecture](./assets/images/arshipfm.png)
+![Projetc's architecture](./assets/images/PFMVFINAL.png)
 The application follows a modern three-tier architecture:
 - **Frontend**: Built with React.js, featuring a component-based structure with view templates and dedicated services
 - **Mobile**: Android application implementing MVVM (Model-View-ViewModel) pattern with LiveData for reactive updates and integrated Roberta AI model for real-time stress analysis and text sentiment detection
