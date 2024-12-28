@@ -190,7 +190,7 @@ The Android application follows the MVVM pattern:
 			<version>2.9.1</version>
 		</dependency>
 ```
-2. **Frontend Dependencies:**
+2. **React js Dependencies:**
 ```
 {
   "name": "minfulmoments",
@@ -337,7 +337,7 @@ npm start
 ```
 Frontend will be accessible on http://localhost:3000
 
-## Mobile Setup:
+### Mobile Setup:
 
 1. **Open Android Studio:**
 
