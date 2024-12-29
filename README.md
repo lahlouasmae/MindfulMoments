@@ -1,7 +1,7 @@
 # Mindful Moments: Stress Management Application Based on Mindfulness
 
 <p align="center">
-  <img src="./assets/images/logo.png" alt="Project's architecture" style="width: 300px; height: 200px;">
+  <img src="./assets/images/logo.png" alt="Project's architecture" style="width: 300px; height: 300px;">
 </p>
 
 
