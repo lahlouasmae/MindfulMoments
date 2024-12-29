@@ -1,8 +1,9 @@
 # Mindful Moments: Stress Management Application Based on Mindfulness
 
 <p align="center">
-  <img src="./assets/images/logo.png" alt="Project's architecture">
+  <img src="./assets/images/logo.png" alt="Project's architecture" style="width: 300px; height: 200px;">
 </p>
+
 
 Our web and mobile platform provides a mental health monitoring solution through real-time stress detection and emotional well-being tracking. The system uses advanced Roberta AI-model for text sentiment analysis and stress detection, offering an intelligent approach to mental health management.
 
